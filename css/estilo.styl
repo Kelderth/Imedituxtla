@@ -1,0 +1,256 @@
+azul_fuerte = rgba(51, 153, 204, 0.75)
+azul_suave	= rgba(51,155,153,0.25)
+gris_texto  = rgba(0,0,0,0.70)
+
+@font-face
+	font-family 'icomoon'
+	src:url('../fonts/icomoon.eot'),url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),url('../fonts/icomoon.ttf') format('truetype'),url('../fonts/icomoon.woff') format('woff'),url('../fonts/icomoon.svg#icomoon') format('svg')
+	font-weight normal
+	font-style normal
+
+
+@import url(http://fonts.googleapis.com/css?family=Oxygen);
+
+aside
+	background azul_suave
+	border 0em dashed red
+	display block
+	margin 0
+	padding 0.2em 0.5em
+
+	.sociales
+		margin 0
+		padding 0
+		height 50px
+		line-height 50px
+		overflow-x auto
+		white-space nowrap
+
+		li
+			display inline-block
+			margin 0
+			padding 0
+			text-align center
+			width 24%
+
+body
+	background rgba(0,0,0, 0.10) fixed
+	border 0px solid black
+	color #222
+	font-family Helvetica,Arial, sans-serif
+	font-size	16px
+	margin 0px auto
+	max-width 1024px
+	padding 0px
+
+.contenidos
+	background azul_suave
+	color gris_texto
+	font-family: 'Oxygen', sans-serif;
+	font-weight normal
+	padding 0.2em 0.5em
+	position relative
+	text-align justify
+
+	p
+		margin	0px 0px
+
+footer
+	background azul_fuerte
+	border 0em dashed red
+	color gris_texto
+	display block
+	font-weight normal
+	margin 0
+	padding 0.1em 0.2em
+	position relative
+
+	h3
+		border 0px solid red
+		font-size 0.75em
+		margin 0
+		overflow hidden
+		padding 0
+
+		.clausulas
+			border 0em solid orange
+			margin 0px 0px 0px -50px
+			padding 0px
+			float right
+			text-align justify
+			vertical-align top
+			width 75%
+
+		strong
+			border 0em solid blue
+			display inline-block
+			margin 0
+			padding 0
+			width 25%
+
+header
+	background rgba(white, .10)
+	border 0em solid black
+	color gris_texto
+	margin 0px
+	overflow hidden
+	padding 0.5em
+	position relative
+	text-align justify
+	z-index 2
+
+
+	.direccion
+		background azul_suave
+		border 0em solid blue
+		border-radius 0.5em
+		box-shadow 3px 2px 2px azul_fuerte
+		font-family 'Oxygen', sans-serif
+		font-style italic
+		font-weight normal
+		display none
+		margin 0px 20px 0px 160px
+		position absolute
+		right 0px
+		top 7px
+
+		.datos
+			border 0em dashed red
+			padding 0.5em
+
+			p
+				margin 0px;
+
+		.telefono
+			border 0em dashed red
+			left -50px
+			position absolute
+			text-decoration none
+			text-shadow 5px 7px 15px gris_texto
+			top	30px
+			z-index 0
+
+			&:before
+				color gris_texto
+				content '\e604'
+				font-family 'icomoon'
+				font-size 2.5em
+				speak none
+
+	.logo
+		border-right 0em solid blue
+		float left
+		max-width 150px
+
+		img
+			width 150px
+
+	.titular
+		/*margin 0px 400px 0px 160px*/
+		border 0em solid black
+		margin 0px 0px 0px 160px
+		padding 0
+		vertical-align top
+
+		.titulo
+			font-size 40px
+			margin 0
+			padding 0
+			text-shadow 2px 0px 1px gris_texto
+
+		.eslogan
+			margin 0
+			padding 0
+
+nav
+	background azul_fuerte
+	border 0em dashed red
+	border-left 15px solid white
+	display	block
+	margin 0px
+	position relative
+	z-index 2
+
+	&:before
+		border-bottom 15px solid transparent
+		border-left 7px solid white
+		border-top 15px solid	transparent
+		content ""
+		left 0px
+		position absolute
+		top 0px
+
+	.menu
+		height 30px
+		line-height 30px
+		margin 0px
+		overflow-x auto
+		padding 0px
+		white-space nowrap
+
+		&::-webkit-scrollbar
+			display none
+
+		li
+			display inline-block
+			margin 0px
+			padding 0px
+
+			a
+				color white
+				display block
+				font-weight bold
+				margin 0 0.5em
+				padding 0.2em 0.2em
+				text-decoration none
+
+				&:hover
+					background rgba(black,0.25)
+					border-radius 0.2em
+
+@media screen and (min-width: 768px)
+
+	aside
+		border 0px dashed blue
+		box-sizing	border-box
+		display inline-block
+		height 500px
+		margin 0px 0px
+		padding 0.2em
+		position relative
+		width 30%
+
+		.sociales
+			border 0px dashed green
+			margin 0
+			padding 0
+			height 100%
+			
+			li
+				border 0px solid black
+				display block
+				width 99%
+				height 23%
+				vertical-align middle
+
+	.contenidos
+		display inline-block
+		box-sizing border-box
+		height 500px
+		margin 0
+		vertical-align top
+		width 70%
+
+	footer
+		border-radius 0 0 0.5em 0.5em
+
+	header
+		.direccion
+			display inline
+			margin 0px 20px 0px 160px
+
+		.titular
+			margin 0px 400px 0px 160px
+
+	nav
+		border-radius 0.5em 0.5em 0 0
